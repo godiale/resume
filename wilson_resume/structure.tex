@@ -79,7 +79,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	JOB COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\job}[6]{
+\newcommand{\job}[8]{
 \begin{tabbing}
 \hspace{2cm} \= \kill
 \textbf{#1} \> \href{#4}{#3} \\
@@ -87,6 +87,14 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \begin{minipage}{\smallertextwidth}
 \vspace{2mm}
 #6
+\end{minipage} \\
+\begin{minipage}{\smallertextwidth}
+\vspace{2mm}
+#7
+\end{minipage} \\
+\begin{minipage}{\smallertextwidth}
+\vspace{2mm}
+#8
 \end{minipage}
 \end{tabbing}
 \vspace{2mm}
