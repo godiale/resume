@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Alexander Godin -- Résumé} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Address} \> 3 Malomoskovskaya st., Apt. 84, \\ % Address line 1
+\> Moscow, 129164, Russia \\ % Address line 2
+{\bf Date of Birth} \> 22$^{nd}$ June 1980 \\ % Date of birth 
+{\bf Nationality} \> Russian % Nationality
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Home Phone} \> +7 (495) 682 2488 \\ % Home phone
+{\bf Mobile Phone} \> +7 (910) 421 0961 \\ % Mobile phone
+{\bf Email} \> \href{mailto:godin\_a\_e@mail.ru}{godin\_a\_e@mail.ru} \\ % Email address
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+\section{Summary Statement}
+
+Software development team lead with 10+ years experience, specializing 
+in high-performance reliable electronic trading systems and computer-aided design.
+Professional, hard-working, flexible with proven analytical skills. Adept in design
+and architecture, software development process, building the team, managing customer
+expectations, organization of support of existing systems. Successful in driving projects
+with unstable requirements to production in complex enterprise landscape. Continue coding 
+myself as "must have" practice for team lead.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+\bf{1997-2002} \> MS, Mathematics - \href{http://en.math.msu.su}
+{Moscow State University, Department of Mechanics and Mathematics}\\[5pt]
+\>\+
+\textit{GPA 4.5/5.0, Red Diploma}\\
+\textit{Thesis - "Generalized Assignment Problem"}
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2002-2005} \> PhD, Philosophy - Russian Institute of Culturology\\[5pt]
+\>\+
+\textit{Thesis - "Science Tradition as Sociocultural Phenomena }\\
+\textit{(by the example of Moscow Philosophic and Mathematics School)"}
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2008-2011} \> Second Degree - \href{http://international.fa.ru}
+{Financial University under the Government of the Russian Federation}\\[5pt]
+\>\+
+\textit{Not finished - all the courses passed, diploma not written.}
+}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment History}
+
+\job
+{Nov 2011 -}{Present}
+{Deutsche Bank, Moscow}
+{http://www.db.com}
+{Lead Software Development Engineer / Software Development Manager}
+{Equities Algo Trading IT department in Moscow, focused on two main areas: development of frameworks for
+writing trading strategies (including implementing strategies themselves), and building software 
+for pre- and real-time  trading analytics. I started working in area of portfolio risk trading strategies,
+with responsibilities to develop math model and software, within time moving to team lead of group of 5 people,
+utilizing Scrum/Kanban and finally to development manager, with 10+ direct reports at the moment,
+with wider products line.
+\begin{itemize}
+\item{Designed and delivered to production automated big (2000+ stocks) portfolio trading engine on C++,
+aiming trading in optimal manner, based on trader preference on frontier between risk and cost. 
+Promoted to Vice President for that.}
+\item{Co-designed and implemented portfolio pre-trade client-server analytical system for US markets.
+Server-side was written on combination of C++ and Python, GUI on C\#. Wrote all instance management scripts
+in combination of Python, Perl and Bash.}
+\item{Switching US-oriented pre-trade solution into global, covering international portfolios.
+Bigger supported universe of stocks (50k+), improving system scalability.}
+\item{Currently developing automated trading container on Java, with C\# GUI. Fully responsible for
+adopting initial prototype, forming global team of developers, setup of SDLC.}
+\end{itemize}
+\rule{0mm}{5mm}\textbf{Technologies:} C++03/STL/Boost, Python2, Numpy/Scipy, MySQL, TCP/HTTP/WebSockets,
+Informatica LBM/Tibco Rendezvous, Bash, ASP.NET/C\#/WPF, Core Java 7/Spring, Oracle SQL, Apache Tomcat.\\
+\rule{0mm}{5mm}\textbf{Operating Systems:} SUSE Linux Enterprise 11 (Server), Windows 7 (GUI, IDE).\\
+\rule{0mm}{5mm}\textbf{SDLC:} Atlassian Confluence/Jira/FishEye/Crucible, Eclipse/CDT/PyDev, SVN/GIT,
+Maven, Jenkins/TeamCity, Nose/Cucumber(Python), JUnit, IBM UrbanCode Deploy, Valgrind, GProf, GCov/Coverage(Python).
+}
+
+%------------------------------------------------
+
+\job
+{Apr 2007 -}{Nov 2011}
+{Deutsche Bank, Moscow}
+{http://www.db.com}
+{Senior Software Development Engineer / Technical Team Lead}
+{Global Equities Trading IT department in Moscow, developing Execution Management System (EMS) of direct market access,
+single stock and portfolio trading. Large development team in Moscow (40+ developers), working closely with regional IT 
+and support teams. I started as a server-side developer, focusing on bringing market data to the system, then was realigned
+to Asia-specific business logic design and coding. In couple of years I became team lead for Asia stream, 
+leading small group of 5 people, using Scrum. Server-side components were written on C++, contained 100+ working threads,
+and were interconnected by Tibco messaging bus. Automated tests were written on C++/Perl.
+\begin{itemize}
+\item{Implementation of big amount of core features and business-logic, specific to Asia, often then re-usable in other regions.}
+\item{Responsible for analysis of requirements and planning scope of releases with Asia regional teams.}
+\item{Successful replacement of old system in India and Taiwan by our EMS, from planning, estimates to final rollout.
+Promoted to Assistant Vice President for this.}
+\item{Primary SL3 contact for EMS in Asia, daily sorting out of production issues, investigation of incidents,
+and performance degradation.}
+\end{itemize}
+\rule{0mm}{5mm}\textbf{Technologies:} C++/STL (Sun), PThreads, Tibco Rendezvous, Perl, Core Java 6, Oracle SQL.\\
+\rule{0mm}{5mm}\textbf{Operating Systems:} Sun (Oracle) Solaris for x86/x64 (Server), Windows XP (GUI, IDE).\\
+\rule{0mm}{5mm}\textbf{SDLC:} Atlassian Jira, MSVS, SVN, CMake, Hudson, GDB.
+}
+
+%------------------------------------------------
+
+\job
+{Mar 2006 -}{Apr 2007}
+{Intel, Moscow}
+{http://www.intel.com}
+{Senior Software Developer}
+{Electronic design automation department of Intel, developing in-house tools for designing Intel processors.
+I was a member of a team of 5 people, focusing on electrical properties of small components, formed from several 
+field transistors. My specialization was analysis of elements resistance to "soft errors", i.e. possible
+flip of value of field transistor when heavy particle arrives, this was more Research and Development (R\&D) job.
+Knowledge field required deep understanding of physics of transistors and way of simulating "soft errors" programmatically.
+We used C++ algorithms to model components and their properties.
+\begin{itemize}
+\item{Became owner of the simulation tool doing "soft errors" analysis, transition done 2x faster than planned.}
+\item{Prepared and released next generation of the tool, based on modern dependency tools and requirements 
+from customers in Israel.}
+\item{Contribution (research, presentations) to global "soft errors" working group.}
+\end{itemize}
+\rule{0mm}{5mm}\textbf{Technologies:} C++/STL (gcc), PThreads, TCL.\\
+\rule{0mm}{5mm}\textbf{Operating Systems:} SUSE Linux Enterprise 9 (Server, IDE).\\
+\rule{0mm}{5mm}\textbf{SDLC:} VIM, Rational ClearCase, Make, GDB/DDD, Valgrind, GProf, GCov.
+}
+
+%------------------------------------------------
+
+\job
+{Jul 2002 -}{Mar 2006}
+{Golden Gate Technology, Moscow}
+{}
+{Software Developer / Senior Software Developer}
+{Small-sized technological startup with offices in Moscow and San Jose (USA), developing set of tools
+to automate physical design high-performance electronic chips. The focus was to reduce power consumption
+for portable and wireless devices. I was a member of global Routing team (2 people in Russia, 2 in US), 
+specializing in detailed (final) routing. This area of knowledge relies heavily on geometric algorithms
+that we implemented solely on C and C++, using parallel computations.
+\begin{itemize}
+\item{Developed routing engine to interconnect components to power and ground meshes.}
+\item{Supported various complex design rules for technologies 65nm and below, enhanced and speeded up ripup-and-reroute maze engine.}
+\item{Wrote geographical-based database for storing and lookup routing topology.}
+\item{Responsible for integration of routing engines into main application.}
+\end{itemize}
+\rule{0mm}{5mm}\textbf{Technologies:} C/C++/STL (gcc), PThreads, Perl, Qt, TCL, RPC XDR.\\
+\rule{0mm}{5mm}\textbf{Operating Systems:} RedHat Linux 7 (Server, GUI, IDE).\\
+\rule{0mm}{5mm}\textbf{SDLC:} Vim, CVS, Make, GDB/DDD, Valgrind, GProf, OProfile, GCov.
+}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Skills}
+
+\skillgroup{Programming Languages and Technologies}
+{
+\textit{C++03, C++11, STL, Boost} - advanced level, 10+ years of experience.\\
+\textit{Python2, NumPy, SciPy} - advanced level, 5 years of experience.\\
+\textit{Tibco Rendezvous, Informatica LBM} - messaging middleware. Good level of design and coding.\\
+\textit{Multi-threading, POSIX Threads, CPython Threads} - good level, however was not used daily.\\
+\textit{Bash, Perl, TCL} - scripting languages. Proficient in Bash, sometimes use Perl one-liners.\\
+\textit{TCP, HTTP, WebSockets} - good level on design and code review, not often programmed myself.\\
+\textit{Oracle SQL, MySQL} - medium level, consumed data mostly, own schemas were quite simple and small.\\
+\textit{Core Java, Spring} - medium level on design and code review, small day-to-day coding experience\\
+\textit{ASP.NET, C\#, WPF} - basic knowledge of design and internals, no hands-on experience\\
+}
+
+%------------------------------------------------
+
+\skillgroup{Operating systems and Platforms}
+{
+\textit{SUSE Linux Enterprise 9,11}\\
+\textit{Microsoft Windows XP, 7}\\
+\textit{Sun (Oracle) Solaris for x86/x64}
+}
+
+%------------------------------------------------
+
+\skillgroup{Software Development Lifecycle}
+{
+\textit{Waterfall, Scrum, Kanban} - development methodologies.\\
+\textit{Atlassian Confluence, Jira, FishEye, Crucible} - used for documentation, backlog and code review.\\
+\textit{CVS, SVN, GIT, Rational ClearCase} - source code control.\\
+\textit{Eclipse/CDT/PyDev, MSVS, Vim} - Integrated Development Environments.\\
+\textit{CMake, Make, Maven} - build machinery.
+\textit{TeamCity, Jenkins/Hudson} - continuous integration.\\
+\textit{GDB, Valgrind, GProf, GCov, OProfile, Coverage} - debugging, profiling and performance measurement tools.\\ 
+\textit{JUnit, Nose, Cucumber} - automated testing frameworks.\\
+}
+
+%------------------------------------------------
+
+\skillgroup{Miscellaneous}
+{
+\textit{English} - fluent speaker.\\
+\textit{Business Writing} - able to cope with big emails flow (100+ emails per day) having Inbox clean.
+\textit{Project Management} - hands-on experience with Microsoft Project, using sequencing and resource assignment for target date estimation. Normally used Scrum/Kanban methodologies with corresponding attributes.\\
+\textit{Presentational Skills} - 3-5 presentations per year to senior IT management and 1-2 per year to traders during last 3 years.
+}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Personal Details}
+
+\personalgroup{
+\personal{Married. Two children: son (6 years) and daughter (4 years).}
+\personal{Would like to relocate to Europe in case of deterioration in political and economical situation in Russia.}
+\personal{I love running and driving motorcycles.}
+\personal{Prefer Russian literature and auteur theory cinema.}
+}
+
+\begin{comment}
+%----------------------------------------------------------------------------------------
+%	REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Referees}
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Bill Lumbergh \\ % Referee name
+{\bf Company} \> Initech Inc. \\ % Referee company
+{\bf Position} \> Vice President \\ % Referee job title 
+{\bf Contact} \> \href{mailto:bill@initech.com}{bill@initech.com} % Referee contact information
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Michael "Big Mike" Tucker\\ % Referee name
+{\bf Company} \> Burbank Buy More \\ % Referee company
+{\bf Position} \> Store Manager \\ % Referee job title 
+{\bf Contact} \> \href{mailto:mike@buymore.com}{mike@buymore.com} % Referee contact information
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+\end{comment}
+
+\end{document}
