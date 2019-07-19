@@ -20,8 +20,22 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{article} % Default font size
+\usepackage{datenumber,fp}
 
 \input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+%	AGE CALCULATION
+%----------------------------------------------------------------------------------------
+
+\newcounter{dateone}
+\newcounter{datetwo}
+\newcounter{myagenotrounded}
+\setmydatenumber{dateone}{1980}{06}{22}
+\setmydatenumber{datetwo}{\the\year}{\the\month}{\the\day}
+\FPsub\result{\thedatetwo}{\thedateone}
+\FPdiv\myagenotrounded{\result}{365.2425}
+\FPround\myage{\myagenotrounded}{0}
 
 %----------------------------------------------------------------------------------------
 
@@ -40,15 +54,14 @@
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
 {\bf Address} \> 16-6 Brateevskaya st., Apt. 99, \\ % Address line 1
 \> Moscow, 115408, Russia \\ % Address line 2
-{\bf Date of Birth} \> 22$^{nd}$ June 1980 \\ % Date of birth 
-{\bf Nationality} \> Russian % Nationality
+{\bf Date of Birth} \> 22$^{nd}$ June 1980 (\myage\ years)\\ % Date of birth 
 \end{tabbing}}
-\hfill % Horizontal space between the two blocks
+\hfill
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
 {\bf Mobile Phone} \> +7 (910) 421 0961 \\ % Mobile phone
-{\bf Email} \> \href{mailto:godin\_a\_e@mail.ru}{godin\_a\_e@mail.ru} \\ % Email address
+{\bf Email} \> \href{mailto:godin\_a\_e@mail.ru}{godin\_a\_e@mail.ru}
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -64,38 +77,6 @@ and architecture, software development process, building the team, managing cust
 expectations, organization of support of existing systems. Successful in driving projects
 with unstable requirements to production in complex enterprise landscape. Continue coding 
 myself as "must have" practice for team lead.
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-\tabbedblock{
-\bf{1997-2002} \> MS, Mathematics - \href{http://en.math.msu.su}
-{Moscow State University, Department of Mechanics and Mathematics}\\[5pt]
-\>\+
-\textit{GPA 4.5/5.0, Red Diploma}\\
-\textit{Thesis - "Generalized Assignment Problem"}
-}
-
-%------------------------------------------------
-
-\tabbedblock{
-\bf{2002-2005} \> PhD, Philosophy - Russian Institute of Culturology\\[5pt]
-\>\+
-\textit{Thesis - "Science Tradition as Sociocultural Phenomena }\\
-\textit{(by the example of Moscow Philosophic and Mathematics School)"}
-}
-
-%------------------------------------------------
-
-\tabbedblock{
-\bf{2008-2011} \> Second Degree - \href{http://international.fa.ru}
-{Financial University under the Government of the Russian Federation}\\[5pt]
-\>\+
-\textit{Not finished - all the courses passed, diploma not written.}
-}
 
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT HISTORY SECTION
@@ -204,6 +185,41 @@ that we implemented solely on C and C++, using parallel computations.}
 {\rule{0mm}{5mm}\textbf{Technologies:} C/C++/STL (gcc), PThreads, Perl, Qt, TCL, RPC XDR.\\
 \rule{0mm}{5mm}\textbf{Operating Systems:} RedHat Linux 7 (Server, GUI, IDE).\\
 \rule{0mm}{5mm}\textbf{SDLC:} Vim, CVS, Make, GDB/DDD, Valgrind, GProf, OProfile, GCov.
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION 
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+\bf{1997-2002} \> MS, Mathematics - \href{http://en.math.msu.su}
+{Moscow State University, Department of Mechanics and Mathematics}\\[5pt]
+\>\+
+\textit{GPA 4.5/5.0, Red Diploma}\\
+\textit{Thesis - "Generalized Assignment Problem"}
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2002-2005} \> PhD, Philosophy - Russian Institute of Culturology\\[5pt]
+\>\+
+\textit{Thesis - "Science Tradition as Sociocultural Phenomena }\\
+\textit{(by the example of Moscow Philosophic and Mathematics School)"}
+}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS 
+%----------------------------------------------------------------------------------------
+
+\section{Certifications}
+
+\tabbedblock{
+\bf{2018} \> \href{https://education.oracle.com/oracle-certified-associate-java-se-8-programmer/trackp_333}
+{Oracle Certified Associate, Java SE 8 Programmer (1Z0-808)}\\[5pt]
+\>\+
 }
 
 %----------------------------------------------------------------------------------------
