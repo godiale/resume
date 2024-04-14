@@ -26,6 +26,7 @@
 
 %----------------------------------------------------------------------------------------
 %	AGE CALCULATION
+%       https://tex.stackexchange.com/questions/11436/automated-age-calculation
 %----------------------------------------------------------------------------------------
 
 \newcounter{dateone}
@@ -35,7 +36,7 @@
 \setmydatenumber{datetwo}{\the\year}{\the\month}{\the\day}
 \FPsub\result{\thedatetwo}{\thedateone}
 \FPdiv\myagenotrounded{\result}{365.2425}
-\FPround\myage{\myagenotrounded}{0}
+\FPtrunc\myage{\myagenotrounded}{0}
 
 %----------------------------------------------------------------------------------------
 
